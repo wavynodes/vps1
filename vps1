@@ -84,10 +84,6 @@ read choice
 
 case $choice in
   1)
-    echo -e "${GREEN}Running GitHub Real VPS...${RESET}"
-    bash <(curl -fsSL "$github_url")
-    ;;
-  2)
     echo -e "${BLUE}Running Google IDX Real VPS...${RESET}"
     cd
     rm -rf myapp
@@ -159,7 +155,7 @@ EOF
         ;;
     esac
     ;;
-  3)
+  2)
     echo -e "${RED}Exiting...${RESET}"
     exit 0
     ;;
